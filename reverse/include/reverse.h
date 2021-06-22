@@ -7,6 +7,7 @@ using std::pair;
 using std::distance;
 #include <algorithm>
 using std::sort;
+using namespace std;
 
 namespace graal {
 
@@ -16,14 +17,10 @@ namespace graal {
 template<class BidirIt>
 void reverse(BidirIt first, BidirIt last)
 {
-    int dist = std::distance(first, last)/2;
-    int aux;
+    int dist = std::distance(first, last);
 
-    for(int i=0; i<dist; i++){
-        aux = *(first + i);
-        *(first + i) = *(last - i -1);
-        *(last - i -1) = aux;
-    }
+    for(int i=0; i<dist/2; i++)
+        swap(first[i], first[dist-i-1]); 
 }
 
 }
