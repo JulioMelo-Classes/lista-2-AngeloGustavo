@@ -29,9 +29,9 @@ std::pair<Itr, Itr> minmax( Itr first, Itr last, Compare cmp )
     auto min = first;
     auto max = first;
 
-    for(int *i=first; i<last; ++i)
+    for(auto *i=first; i<last; ++i)
         cmp(*i,*max)? max=max: max=i;
-    for(int *i=last-1; i>=first; --i)
+    for(auto *i=last-1; i>=first; --i)
         cmp(*min,*i)? min=min: min=i;
 
     return std::make_pair( min, max );
