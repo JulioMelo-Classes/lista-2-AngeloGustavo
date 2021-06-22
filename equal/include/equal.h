@@ -17,7 +17,7 @@ template<class InputIt1, class InputIt2, class Equal>
 bool equal(InputIt1 first1, InputIt1 last1, InputIt2 first2, Equal eq)
 {
     int j;
-    int* i; 
+    auto i=first1; 
     for(i=first1, j=0; i<last1; ++i, j++)
         if(!eq(first1[j],first2[j]))
             return false;
@@ -30,7 +30,7 @@ bool equal(InputIt1 first1, InputIt1 last1,
            Equal eq )
 {
     int j;
-    int *i;
+    auto i=first1; 
     for(i=first1, j=0; i<last1; ++i, j++)
         if(!eq(first1[j],first2[j]))
             return false;
