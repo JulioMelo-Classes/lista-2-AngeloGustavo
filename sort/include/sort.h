@@ -16,9 +16,8 @@ namespace graal {
 template<class ForwardIt, class Comparison>
 void sort(ForwardIt first, ForwardIt last, Comparison cmp)
 {
-    int *i,*j;
-    for(i=first; i<last-1; i++)
-        for(j=i; j<last; j++)
+    for(auto i=first; i<last-1; i++)
+        for(auto j=i; j<last; j++)
             if(!cmp(*i,*j))
                 std::swap(*i,*j);
 }
