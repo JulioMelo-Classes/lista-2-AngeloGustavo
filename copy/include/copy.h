@@ -16,6 +16,7 @@ namespace graal {
  * @param first Ponteiro para o primeiro elemento do range
  * @param last Ponteiro para a posição logo após o último elemento do range
  * @param first Ponteiro para se tornar o primeiro elemento do range após a reordenação
+ *
  * @return Ponteiro para a posição logo após o último elemento do range reordenado
  *
  */
