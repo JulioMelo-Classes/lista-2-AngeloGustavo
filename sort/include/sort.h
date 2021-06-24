@@ -11,7 +11,13 @@ using std::sort;
 namespace graal {
 
 /*! 
- * TODO: documentação no estilo doxygen
+ * @tparam ForwardIt iterator para o range.
+ * @tparam Comparison o tipo de uma função bool(const string &a,  const string &b)
+ *
+ * @param first Ponteiro para o primeiro elemento do range
+ * @param last Ponteiro para a posição logo após o último elemento do range
+ * @param cmp A função que retorna true se o elemento é menor do que o segundo, ou falso caso contrário
+ *
  */
 template<class ForwardIt, class Comparison>
 void sort(ForwardIt first, ForwardIt last, Comparison cmp)
