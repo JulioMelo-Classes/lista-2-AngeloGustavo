@@ -12,7 +12,17 @@ using namespace std;
 namespace graal {
 
 /*! 
- * TODO: documentação no estilo doxygen
+ * @tparam BidirIt iterator para o range.
+ *
+ * @param first Ponteiro para o primeiro elemento do range
+ * @param last Ponteiro para a posição logo após o último elemento do range
+ *
+ *\var int dist
+ *\brief Contem a tamanho do range.
+ *
+ *\var int i
+ *\brief Contador para percorrer o range
+ *
  */
 template<class BidirIt>
 void reverse(BidirIt first, BidirIt last)
