@@ -20,10 +20,13 @@ namespace graal {
  * @return Ponteiro para a posição logo após o último elemento do range reordenado
  *
  */
+ /*
+ 20% pela documentação
+ */
 template<class InputIt>
 InputIt copy(InputIt first, InputIt last, InputIt d_first)
 {
-    std::copy(first,last,d_first);
+    std::copy(first,last,d_first); //hmm... vc não deveria usar a stl para esse caso, é o mesmo que não implementar
     int dist = std::distance(first, last);
 
     return d_first+dist;

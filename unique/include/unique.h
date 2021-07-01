@@ -21,6 +21,9 @@ namespace graal {
  * @return Um iterator para o elemento logo após o último elemento do range após o processamento.
  *
  */
+ /*
+ otimo
+ */
 template<class InputIt, class Equal>
 InputIt unique( InputIt first, InputIt last, Equal eq )
 {

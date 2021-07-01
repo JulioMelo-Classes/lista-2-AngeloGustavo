@@ -20,6 +20,9 @@ namespace graal {
  * @return Um iterator para a posição onde se encontra o primeiro elemento do range antes da rotação
  *
  */
+ /*
+ blz
+ */
 template<class ForwardIt>
 ForwardIt rotate(ForwardIt first, ForwardIt n_first, ForwardIt last)
 {  
